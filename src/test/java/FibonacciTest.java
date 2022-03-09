@@ -24,4 +24,11 @@ public class FibonacciTest {
         int obtainedValue = fibonacci.compute(0);
         assertEquals(expectedValue, obtainedValue);
     }
+
+    @Test
+    public void numberIsOne() {
+        int expectedValue = 1;
+        int obtainedValue = fibonacci.compute(1);
+        assertEquals(expectedValue, obtainedValue);
+    }
 }
