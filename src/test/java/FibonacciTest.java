@@ -17,4 +17,11 @@ public class FibonacciTest {
     public void numberIsNegative() {
         assertThrows(RuntimeException.class, () -> fibonacci.compute(-1));
     }
+
+    @Test
+    public void numberIsZero() {
+        int expectedValue = 0;
+        int obtainedValue = fibonacci.compute(0);
+        assertEquals(expectedValue, obtainedValue);
+    }
 }
