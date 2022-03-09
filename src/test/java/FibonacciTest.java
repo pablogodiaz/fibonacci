@@ -31,4 +31,11 @@ public class FibonacciTest {
         int obtainedValue = fibonacci.compute(1);
         assertEquals(expectedValue, obtainedValue);
     }
+
+    @Test
+    public void numberIsSeven() {
+        int expectedValue = 13;
+        int obtainedValue = fibonacci.compute(7);
+        assertEquals(expectedValue, obtainedValue);
+    }
 }
